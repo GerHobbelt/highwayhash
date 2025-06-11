@@ -49,7 +49,7 @@ void TestHash64(uint64_t expected, const uint8_t* data, size_t size,
   }
 }
 
-int main() {
+int main(void) {
   uint8_t data[kMaxSize + 1] = {0};
   int i;
   for (i = 0; i <= kMaxSize; i++) {
