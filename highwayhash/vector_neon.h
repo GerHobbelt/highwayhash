@@ -39,6 +39,7 @@
 // contents.
 #ifndef HH_DISABLE_TARGET_SPECIFIC
 #include <arm_neon.h>  // NEON
+#include <string.h>
 
 namespace highwayhash {
 // To prevent ODR violations when including this from multiple translation
@@ -859,6 +860,10 @@ LoadUnaligned<V2x64F>(const V2x64F::T* const HH_RESTRICT from) {
   return V2x64F(vld1q_f64(from));
 }
 #endif
+HH_INLINE uint32_t LoadUnaligned(const uint32_t* const from) {
+  const uint8_t* cfrom = reinterpret_cast<const uint8_t*>(from);
+  return cfrom[0] | (cfrom[1] << 8) | (cfrom[2] << 16) | (cfrom[3] << 24);
+}
 
 // "to" must be vector-aligned.
 template <typename T>
