@@ -368,6 +368,7 @@ Vinzent Steinberg | Rust bindings | https://github.com/vks/highwayhash-rs
 Frank Wessels & Andreas Auernhammer | Go and ARM assembly | https://github.com/minio/highwayhash
 Phil Demetriou | Python 3 bindings | https://github.com/kpdemetriou/highwayhash-cffi
 Jonathan Beard | C++20 constexpr | https://gist.github.com/jonathan-beard/632017faa1d9d1936eb5948ac9186657
+James Cook | Ruby bindings | https://github.com/jamescook/highwayhash
 
 ## Modules
 
@@ -397,6 +398,6 @@ Jonathan Beard | C++20 constexpr | https://gist.github.com/jonathan-beard/632017
 *   vector256.h and vector128.h contain wrapper classes for AVX2 and SSE4.1.
 
 By Jan Wassenberg <jan.wassenberg@gmail.com> and Jyrki Alakuijala
-<jyrki.alakuijala@gmail.com>, updated 2018-10-02
+<jyrki.alakuijala@gmail.com>, updated 2023-03-29
 
 This is not an official Google product.
