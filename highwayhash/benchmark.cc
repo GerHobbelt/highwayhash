@@ -32,7 +32,7 @@
 
 // Which functions to enable (includes check for compiler support)
 #define BENCHMARK_SIP 0
-#define BENCHMARK_SIP_TREE 0
+#define BENCHMARK_SIP_TREE 1
 #define BENCHMARK_HIGHWAY 1
 #define BENCHMARK_HIGHWAY_CAT 1
 #define BENCHMARK_FARM 0
